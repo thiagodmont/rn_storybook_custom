@@ -1,0 +1,8 @@
+{
+  "name": "@acme/screens",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@acme/components": "0.0.0"
+  }
+}

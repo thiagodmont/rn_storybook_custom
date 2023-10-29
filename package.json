@@ -1,0 +1,66 @@
+{
+  "name": "@acme/root",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "npx react-native run-ios",
+    "lint": "eslint .",
+    "start": "npx react-native start --reset-cache",
+    "start:storybook": "APP_ENV=storybook npx react-native start --reset-cache",
+    "start:storybook:server": "node --openssl-legacy-provider ./node_modules/@storybook/react-native-server/dist/server -p 7007 -c src/storybook/server",
+    "test": "jest"
+  },
+  "workspaces": {
+    "packages": [
+      "src/**/*"
+    ]
+  },
+  "dependencies": {
+    "@acme/screens": "0.0.0",
+    "@acme/storybook": "0.0.0",
+    "@storybook/addons": "6.5.16",
+    "react": "18.2.0",
+    "react-native": "0.72.6",
+    "react-native-navigation": "^7.37.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "@babel/runtime": "^7.20.0",
+    "@react-native-async-storage/async-storage": "^1.19.3",
+    "@react-native-community/eslint-config": "^3.2.0",
+    "@react-native/eslint-config": "^0.72.2",
+    "@react-native/metro-config": "^0.72.11",
+    "@storybook/builder-webpack5": "6.5.16",
+    "@storybook/manager-webpack5": "6.5.16",
+    "@storybook/react": "6.5.16",
+    "@storybook/react-native": "6.5.6",
+    "@storybook/react-native-server": "6.5.6",
+    "@tsconfig/react-native": "^3.0.2",
+    "@types/jest": "^29.5.6",
+    "@types/react": "^18.2.33",
+    "@types/react-test-renderer": "^18.0.5",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "babel-jest": "^29.2.1",
+    "babel-loader": "8.2.4",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jest": "^27.6.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "jest": "^29.2.1",
+    "metro-react-native-babel-preset": "0.76.8",
+    "prettier": "^3.0.3",
+    "react-dom": "^18.2.0",
+    "react-native-dotenv": "^3.4.9",
+    "react-native-safe-area-context": "^4.7.4",
+    "react-test-renderer": "18.2.0",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
