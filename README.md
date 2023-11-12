@@ -1,6 +1,6 @@
 # About this project
 
-This is a minimap reproducible bare React Native App with a custom implementation of React Native Storybook.
+This is a reproducible bare React Native App with a custom implementation of React Native Storybook.
 
 ```bash
 # Use this command to run the project
