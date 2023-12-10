@@ -8,7 +8,7 @@
     "lint": "eslint .",
     "start": "npx react-native start --reset-cache",
     "start:storybook": "APP_ENV=storybook npx react-native start --reset-cache",
-    "start:storybook:server": "node --openssl-legacy-provider ./node_modules/@storybook/react-native-server/dist/server -p 7007 -c src/storybook/server",
+    "start:storybook:server": "node ./node_modules/@storybook/react-native-server/dist/server -p 7007 -c src/storybook/server",
     "test": "jest"
   },
   "workspaces": {
@@ -37,6 +37,8 @@
     "@storybook/react": "6.5.16",
     "@storybook/react-native": "6.5.6",
     "@storybook/react-native-server": "6.5.6",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^12.3.2",
     "@tsconfig/react-native": "^3.0.2",
     "@types/jest": "^29.5.6",
     "@types/react": "^18.2.33",

@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { Text as RNText, StyleSheet, StyleProp, ViewStyle } from 'react-native'
+import { Text as RNText, StyleProp, StyleSheet, TextStyle } from 'react-native'
 
 const fontSizeScale = {
   none: 0,
@@ -16,7 +16,7 @@ type FontSizeScale = keyof typeof fontSizeScale
 
 type TextProps = {
   size?: FontSizeScale
-  style?: StyleProp<ViewStyle>
+  style?: StyleProp<TextStyle>
   children: React.ReactNode
 }
 
